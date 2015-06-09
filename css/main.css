@@ -95,22 +95,24 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-body {
+header, footer {
     text-align: center;
 }
 
+.content{
+    width: 500px;
+    min-height: 100px;
+    margin: 100px auto;
+}
 
+#questao-content {
+    margin: 50px 0;
+    text-align: left;
+}
 
-
-
-
-
-
-
-
-
-
+.texto-alternativa {
+    margin-left: 10px;
+}
 
 
 /* ==========================================================================
