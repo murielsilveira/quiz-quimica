@@ -102,11 +102,11 @@ textarea {
     margin-bottom: 100px;
 }
 
-#questao-title {
+#titulo-da-questao {
     min-height: 80px;
 }
 
-#questao-content {
+#conteudo-da-questao {
     margin: 50px 0 50px 0;
 }
 
