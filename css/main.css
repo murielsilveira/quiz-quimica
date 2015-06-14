@@ -95,24 +95,34 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-header, footer {
-    text-align: center;
+
+#questao-container {
+    min-height: 360px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
-.content{
-    width: 500px;
-    min-height: 100px;
-    margin: 100px auto;
+#questao-title {
+    min-height: 80px;
 }
 
 #questao-content {
-    margin: 50px 0;
-    text-align: left;
+    margin: 50px 0 50px 0;
 }
 
-.texto-alternativa {
-    margin-left: 10px;
+.btn-action {
+    margin-top: 20px;
 }
+
+footer.page-footer {
+    text-align: center;
+    padding-top: 0;
+}
+
+footer.page-footer .footer-copyright {
+    height: auto;
+}
+
 
 
 /* ==========================================================================
