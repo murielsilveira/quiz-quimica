@@ -24,17 +24,28 @@ var Quiz = (function() {
         }
     ],
     questao_atual,
+    nome,
+    $tituloDaQuestao = $('#titulo-da-questao'),
+    $conteudoDaQuestao = $('#conteudo-da-questao'),
     $btnVoltar = $('#btn-voltar'),
-    $btnProxima = $('#btn-proxima');
+    $btnAvancar = $('#btn-avancar'),
+    $btnFinalizar = $('#btn-finalizar');
 
-    function start() {
-        $btnVoltar.removeClass('hide').click(mostrarQuestaoAnterior);
-        $btnProxima.removeClass('hide').click(mostrarProximaQuestao);
+    function init() {
+        $('#form-nome').on('submit', onSubmitFormNome);
+        $btnVoltar.click(mostrarQuestaoAnterior);
+        $btnAvancar.click(mostrarProximaQuestao);
+    }
 
+    function onSubmitFormNome() {
+        nome = $('#nome-do-aluno').val() || undefined;
         mostrarPrimeiraQuestao();
+        return false;
     }
 
     function mostrarPrimeiraQuestao() {
+        $btnVoltar.removeClass('hide');
+        $btnAvancar.removeClass('hide');
         questao_atual = 0;
         mostrarQuestao(questoes[questao_atual]);
     }
@@ -62,13 +73,13 @@ var Quiz = (function() {
 
         for (var i = 0; i < numeroDeAlternativas; i++) {
             alternativasHtml += '<div class="alternativa">' +
-                '<input type="radio" name="alternativa" id="alternativa_' + i + '">' +
+                '<input type="radio" name="alternativa" id="alternativa_' + i + '" class="with-gap">' +
                 '<label for="alternativa_' + i + '">' + questao.alternativas[i] + '</label>' +
                 '</div>';
         }
 
-        $('#questao-title').html(tituloHtml);
-        $('#questao-content').html(alternativasHtml);
+        $tituloDaQuestao.html(tituloHtml);
+        $conteudoDaQuestao.html(alternativasHtml);
         $('.alternativa input').click(selecionarAlternativa);
         if (questao.resposta !== undefined) {
             $('#alternativa_' + questao.resposta).prop('checked', true);
@@ -79,14 +90,14 @@ var Quiz = (function() {
 
     function ajustarBotoes() {
         $btnVoltar.prop('disabled', false);
-        $btnProxima.prop('disabled', false);
+        $btnAvancar.prop('disabled', false);
 
         if (questao_atual === 0) {
             $btnVoltar.prop('disabled', true);
         }
 
         if (questao_atual + 1 === questoes.length) {
-            $btnProxima.prop('disabled', true);
+            $btnAvancar.prop('disabled', true);
         }
     }
 
@@ -96,8 +107,8 @@ var Quiz = (function() {
     }
 
     return {
-        start: start
+        init: init
     };
 })();
 
-Quiz.start();
+Quiz.init();

@@ -97,16 +97,16 @@ textarea {
 
 
 #questao-container {
-    min-height: 360px;
+    min-height: 380px;
     margin-top: 50px;
     margin-bottom: 100px;
 }
 
-#questao-title {
+#titulo-da-questao {
     min-height: 80px;
 }
 
-#questao-content {
+#conteudo-da-questao {
     margin: 50px 0 50px 0;
 }
 

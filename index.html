@@ -21,22 +21,42 @@
 
     <nav>
         <div class="nav-wrapper teal">
-            <a href="." class="brand-logo center">Quiz Química</a>
+            <a href="." class="brand-logo center">
+                <i class="mdi-social-school left"></i>
+                Quiz Química
+            </a>
         </div>
     </nav>
     <div id="questao-container" class="container">
         <div class="row">
             <div class="col s12">
-                <div id="questao-title">
+                <div id="titulo-da-questao">
+                    <h4>Para começar o Quiz, informe seu nome:</h4>
                 </div>
-                <div id="questao-content">
+                <div id="conteudo-da-questao">
+                    <div class="row">
+                        <form action="#" class="col s12" id="form-nome">
+                            <div class="row">
+                                <div class="input-field col s12 m6">
+                                    <input id="nome-do-aluno" type="text" class="validate">
+                                    <label for="nome-do-aluno">Nome</label>
+                                    <button id="btn-iniciar" class="btn waves-effect waves-light btn-action" type="submit">
+                                        Iniciar
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div id="questao-footer">
+                <div>
                     <button id="btn-voltar" class="btn waves-effect waves-light btn-action hide" type="button">
                         Voltar <i class="mdi-navigation-arrow-back left"></i>
                     </button>
-                    <button id="btn-proxima" class="btn waves-effect waves-light btn-action hide" type="button">
+                    <button id="btn-avancar" class="btn waves-effect waves-light btn-action hide" type="button">
                         Próxima <i class="mdi-navigation-arrow-forward right"></i>
+                    </button>
+                    <button id="btn-finalizar" class="btn waves-effect waves-light btn-action right blue hide" type="button">
+                        Finalizar
                     </button>
                 </div>
             </div>
@@ -45,7 +65,7 @@
     <footer class="page-footer teal">
         <div class="footer-copyright">
             <div class="container">
-                Quiz Quimica @ UDESC Joinville - Informática na Educação
+                Quiz Química @ UDESC Joinville - Informática na Educação
             </div>
         </div>
     </footer>
