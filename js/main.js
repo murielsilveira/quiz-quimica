@@ -2,34 +2,34 @@ var Quiz = (function() {
     'use strict';
 
     var questoes = [
-        {
-            titulo: 'Qual o elemento químico mais abundante do universo?',
-            alternativas: [
-                'Alternativa 1.1',
-                'Alternativa 1.2',
-                'Alternativa 1.3',
-                'Alternativa 1.4',
-                'Alternativa 1.5'
-            ]
-        },
-        {
-            titulo: 'Segunda questão?',
-            alternativas: [
-                'Alternativa 2.1',
-                'Alternativa 2.2',
-                'Alternativa 2.3',
-                'Alternativa 2.4',
-                'Alternativa 2.5'
-            ]
-        }
-    ],
-    questao_atual,
-    nome,
-    $tituloDaQuestao = $('#titulo-da-questao'),
-    $conteudoDaQuestao = $('#conteudo-da-questao'),
-    $btnVoltar = $('#btn-voltar'),
-    $btnAvancar = $('#btn-avancar'),
-    $btnFinalizar = $('#btn-finalizar');
+            {
+                titulo: 'Qual o elemento químico mais abundante do universo?',
+                alternativas: [
+                    'Alternativa 1.1',
+                    'Alternativa 1.2',
+                    'Alternativa 1.3',
+                    'Alternativa 1.4',
+                    'Alternativa 1.5'
+                ]
+            },
+            {
+                titulo: 'Segunda questão?',
+                alternativas: [
+                    'Alternativa 2.1',
+                    'Alternativa 2.2',
+                    'Alternativa 2.3',
+                    'Alternativa 2.4',
+                    'Alternativa 2.5'
+                ]
+            }
+        ],
+        questao_atual,
+        nome,
+        $tituloDaQuestao = $('#titulo-da-questao'),
+        $conteudoDaQuestao = $('#conteudo-da-questao'),
+        $btnVoltar = $('#btn-voltar'),
+        $btnAvancar = $('#btn-avancar'),
+        $btnFinalizar = $('#btn-finalizar');
 
     function init() {
         $('#form-nome').on('submit', onSubmitFormNome);
