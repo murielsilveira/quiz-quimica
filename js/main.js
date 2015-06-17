@@ -164,6 +164,7 @@ Sobre o composto orgânico farnesol, considere as seguintes afirmativas:
     function mostrarQuestao(questao) {
         var tituloHtml = '',
             alternativasHtml = '',
+            dicaHtml = '',
             numeroDeAlternativas = questao.alternativas.length;
 
         tituloHtml = '<h5>' + (questao_atual + 1) + '. ' + questao.titulo + '</h5>';
@@ -175,6 +176,8 @@ Sobre o composto orgânico farnesol, considere as seguintes afirmativas:
                 '</div>';
         }
 
+        dicaHtml ='<br><button id="dica_' + questao_atual + '" class="btn btn-flat waves-effect waves-light btn-action" type="button">Dica</button>';
+
         $tituloDaQuestao.html(tituloHtml);
         $conteudoDaQuestao.html(alternativasHtml);
         $('.alternativa input').click(selecionarAlternativa);
@@ -182,7 +185,20 @@ Sobre o composto orgânico farnesol, considere as seguintes afirmativas:
             $('#alternativa_' + questao.resposta).prop('checked', true);
         }
 
+        $('#dica_' + questao_atual).click(mostrarDica);
+
         ajustarBotoes();
+    }
+
+    function mostrarDica(e) {
+        var $btn = $(e.target),
+            questao_index = $btn.attr('id').split('_')[1],
+            questao = questoes[questao_index];
+
+
+
+
+        $btn.hide();
     }
 
     function ajustarBotoes() {
