@@ -15,7 +15,7 @@ var Quiz = (function() {
                     'Ácido orgânico e amina primária.',
                     'Amina primária e aldeído.'
                 ],
-                alternativaCorreta: 0
+                alternativaCorreta: 3
             },
             {
                 titulo: '(UFRS) O GLP (gás liquefeito de petróleo) é uma fração de destilação constituída essencialmente de:',
@@ -26,7 +26,7 @@ var Quiz = (function() {
                     'Metano, etano e propano.',
                     'Hidrocarbonetos parafínicos com até dez carbonos na molécula.'
                 ],
-                alternativaCorreta: 0
+                alternativaCorreta: 1
             },
             {
                 titulo: '(CEFET – PR) O gás de cozinha (GLP) é produzido por refino do petróleo. É falso afirmar que:',
@@ -37,7 +37,7 @@ var Quiz = (function() {
                     'É menos denso que a gasolina.',
                     'Tem ponto de ebulição mais baixo que o querosene.'
                 ],
-                alternativaCorreta: 0
+                alternativaCorreta: 2
             },
             {
                 titulo: `
@@ -57,7 +57,7 @@ A partir dessas informações, pode-se afirmar que:
                     'Metano forma ligações de hidrogênio entre suas moléculas.',
                     'O HCl, em meio aquoso não conduz eletricidade.'
                 ],
-                alternativaCorreta: 0
+                alternativaCorreta: 1
             },
             {
                 titulo: `
@@ -72,7 +72,7 @@ Sobre o composto orgânico farnesol, considere as seguintes afirmativas:
                     'O composto farnesol apresenta cadeia ramificada.',
                     'A cadeia hidrocarbônica do farnesol apresenta três ligações duplas na configuração trans.'
                 ],
-                alternativaCorreta: 0
+                alternativaCorreta: 3
             },
             {
                 titulo: '(CESGRANRIO) Identifique, entre os compostos mencionados abaixo, o composto iônico:',
@@ -83,7 +83,7 @@ Sobre o composto orgânico farnesol, considere as seguintes afirmativas:
                     'HCl',
                     'Cl2'
                 ],
-                alternativaCorreta: 0
+                alternativaCorreta: 1
             },
             {
                 titulo: '(ABC) Pertencem à família dos calcogênios:',
@@ -94,7 +94,7 @@ Sobre o composto orgânico farnesol, considere as seguintes afirmativas:
                     'O sódio e o potássio.',
                     'O cálcio e o bário.'
                 ],
-                alternativaCorreta: 0
+                alternativaCorreta: 2
             },
             {
                 titulo: '(ABC) Entre as moléculas abaixo, a que forma pontes de hidrogênio entre suas moléculas é:',
@@ -105,7 +105,7 @@ Sobre o composto orgânico farnesol, considere as seguintes afirmativas:
                     'C2H6',
                     'N(CH3)3'
                 ],
-                alternativaCorreta: 0
+                alternativaCorreta: 1
             },
             {
                 titulo: '(PUC) As pontes de hidrogênio aparecem:',
@@ -116,18 +116,7 @@ Sobre o composto orgânico farnesol, considere as seguintes afirmativas:
                     'Somente em compostos inorgânicos.',
                     'Somente nos ácidos de Arrhenius.'
                 ],
-                alternativaCorreta: 0
-            },
-            {
-                titulo: '(CEFET – PR) O gás de cozinha (GLP) é produzido por refino do petróleo. É falso afirmar que:',
-                alternativas: [
-                    'É gasoso na temperatura ambiente.',
-                    'Sob pressão, está liquefeito dentro do bujão.',
-                    'É formado por compostos de 5 a 6 átomos de carbono.',
-                    'É menos denso que a gasolina.',
-                    'Tem ponto de ebulição mais baixo que o querosene.'
-                ],
-                alternativaCorreta: 0
+                alternativaCorreta: 1
             }
         ],
         questao_atual,
