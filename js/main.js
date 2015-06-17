@@ -3,26 +3,131 @@ var Quiz = (function() {
 
     var questoes = [
             {
-                titulo: 'Qual o elemento químico mais abundante do universo?',
+                titulo: `
+                    (PUC-RIO 2007) Nossos corpos podem sintetizar onze aminoácidos em quantidades suficientes para nossas necessidades. Não podemos, porém, produzir as proteínas para a vida a não ser ingerindo os outros nove, conhecidos como aminoácidos essenciais.
+                    <br><br><img src="/img/questao-1.jpg" height="120"/><br><br>
+                    Assinale a alternativa que indica apenas funções orgânicas encontradas no aminoácido essencial fenilalanina, mostrada na figura acima.
+                `,
                 alternativas: [
-                    'Alternativa 1.1',
-                    'Alternativa 1.2',
-                    'Alternativa 1.3',
-                    'Alternativa 1.4',
-                    'Alternativa 1.5'
+                    'Álcool e amida.',
+                    'Éter e éster.',
+                    'Ácido orgânico e amida.',
+                    'Ácido orgânico e amina primária.',
+                    'Amina primária e aldeído.'
                 ],
                 alternativaCorreta: 0
             },
             {
-                titulo: 'Segunda questão?',
+                titulo: '(UFRS) O GLP (gás liquefeito de petróleo) é uma fração de destilação constituída essencialmente de:',
                 alternativas: [
-                    'Alternativa 2.1',
-                    'Alternativa 2.2',
-                    'Alternativa 2.3',
-                    'Alternativa 2.4',
-                    'Alternativa 2.5'
+                    'Metano.',
+                    'Propano e butano.',
+                    'Hexano.',
+                    'Metano, etano e propano.',
+                    'Hidrocarbonetos parafínicos com até dez carbonos na molécula.'
                 ],
-                alternativaCorreta: 4
+                alternativaCorreta: 0
+            },
+            {
+                titulo: '(CEFET – PR) O gás de cozinha (GLP) é produzido por refino do petróleo. É falso afirmar que:',
+                alternativas: [
+                    'É gasoso na temperatura ambiente.',
+                    'Sob pressão, está liquefeito dentro do bujão.',
+                    'É formado por compostos de 5 a 6 átomos de carbono.',
+                    'É menos denso que a gasolina.',
+                    'Tem ponto de ebulição mais baixo que o querosene.'
+                ],
+                alternativaCorreta: 0
+            },
+            {
+                titulo: `
+(PUC-RIO 2009) Considere as informações apresentadas sobre as seguintes substâncias:
+<br><br>
+<br>I - ácido clorídrico: de fórmula HCl, age como ácido forte quando dissolvido em água.
+<br>II - nitrato de potássio: de fórmula KNO3, é um sal iônico que se dissocia totalmente em água.
+<br>III - argônio: de fórmula Ar, é um gás nobre, inerte.
+<br>IV - metano: de fórmula CH4, é um alcano, gasoso, cuja geometria molecular é a de um tetraedro regular.
+<br><br>
+A partir dessas informações, pode-se afirmar que:
+                `,
+                alternativas: [
+                    'Apenas o argônio é apolar.',
+                    'Argônio e metano são muito pouco solúveis em água.',
+                    'Nitrato de potássio é solúvel apenas em solventes apolares.',
+                    'Metano forma ligações de hidrogênio entre suas moléculas.',
+                    'O HCl, em meio aquoso não conduz eletricidade.'
+                ],
+                alternativaCorreta: 0
+            },
+            {
+                titulo: `
+(UFPR 2010) As plantas sintetizam a estrutura de poliisopreno das borrachas naturais usando o pirofosfato de 3-metil-3-butenila. Muitos outros produtos naturais são derivados desse composto, incluindo os terpenos. O sesquiterpeno farnesol é uma das substâncias mais comuns do reino vegetal e é um precursor biossintético da estrutura de esteroides.
+<br><br><img src="/img/questao-5.jpg" height="120"/><br><br>
+Sobre o composto orgânico farnesol, considere as seguintes afirmativas:
+                `,
+                alternativas: [
+                    'A estrutura do farnesol apresenta seis átomos de carbono sp2.',
+                    'O produto de oxidação do farnesol é uma cetona.',
+                    'O farnesol é um álcool insaturado.',
+                    'O composto farnesol apresenta cadeia ramificada.',
+                    'A cadeia hidrocarbônica do farnesol apresenta três ligações duplas na configuração trans.'
+                ],
+                alternativaCorreta: 0
+            },
+            {
+                titulo: '(CESGRANRIO) Identifique, entre os compostos mencionados abaixo, o composto iônico:',
+                alternativas: [
+                    'BCl3',
+                    'NaCl',
+                    'CsCl',
+                    'HCl',
+                    'Cl2'
+                ],
+                alternativaCorreta: 0
+            },
+            {
+                titulo: '(ABC) Pertencem à família dos calcogênios:',
+                alternativas: [
+                    'O cloro e o bromo.',
+                    'O oxigênio e o nitrogênio.',
+                    'O selênio e o telúrio.',
+                    'O sódio e o potássio.',
+                    'O cálcio e o bário.'
+                ],
+                alternativaCorreta: 0
+            },
+            {
+                titulo: '(ABC) Entre as moléculas abaixo, a que forma pontes de hidrogênio entre suas moléculas é:',
+                alternativas: [
+                    'CH4',
+                    'CH3 – CH2 – OH',
+                    'CH3 – O – CH3',
+                    'C2H6',
+                    'N(CH3)3'
+                ],
+                alternativaCorreta: 0
+            },
+            {
+                titulo: '(PUC) As pontes de hidrogênio aparecem:',
+                alternativas: [
+                    'Quando o hidrogênio está ligado a um elemento muito eletropositivo.',
+                    'Quando o hidrogênio está ligado a um elemento muito eletronegativo.',
+                    'Em todos os compostos hidrogenados.',
+                    'Somente em compostos inorgânicos.',
+                    'Somente nos ácidos de Arrhenius.'
+                ],
+                alternativaCorreta: 0
+            },
+            {
+                titulo: '(CEFET – PR) O gás de cozinha (GLP) é produzido por refino do petróleo. É falso afirmar que:',
+                alternativas: [
+                    'É gasoso na temperatura ambiente.',
+                    'Sob pressão, está liquefeito dentro do bujão.',
+                    'É formado por compostos de 5 a 6 átomos de carbono.',
+                    'É menos denso que a gasolina.',
+                    'Tem ponto de ebulição mais baixo que o querosene.'
+                ],
+                alternativaCorreta: 0
             }
         ],
         questao_atual,
@@ -72,7 +177,7 @@ var Quiz = (function() {
             alternativasHtml = '',
             numeroDeAlternativas = questao.alternativas.length;
 
-        tituloHtml = '<h4>' + (questao_atual + 1) + '. ' + questao.titulo + '</h4>';
+        tituloHtml = '<h5>' + (questao_atual + 1) + '. ' + questao.titulo + '</h5>';
 
         for (var i = 0; i < numeroDeAlternativas; i++) {
             alternativasHtml += '<div class="alternativa">' +
