@@ -3,11 +3,9 @@ var Quiz = (function() {
 
     var questoes = [
             {
-                titulo: `
-                    (PUC-RIO 2007) Nossos corpos podem sintetizar onze aminoácidos em quantidades suficientes para nossas necessidades. Não podemos, porém, produzir as proteínas para a vida a não ser ingerindo os outros nove, conhecidos como aminoácidos essenciais.
-                    <br><br><img src="img/questao-1.jpg" height="120"/><br><br>
-                    Assinale a alternativa que indica apenas funções orgânicas encontradas no aminoácido essencial fenilalanina, mostrada na figura acima.
-                `,
+                titulo: '(PUC-RIO 2007) Nossos corpos podem sintetizar onze aminoácidos em quantidades suficientes para nossas necessidades. Não podemos, porém, produzir as proteínas para a vida a não ser ingerindo os outros nove, conhecidos como aminoácidos essenciais.'+
+                    '<br><br><img src="img/questao-1.jpg" height="120"/><br><br>'+
+                    'Assinale a alternativa que indica apenas funções orgânicas encontradas no aminoácido essencial fenilalanina, mostrada na figura acima.',
                 alternativas: [
                     'Álcool e amida.',
                     'Éter e éster.',
@@ -40,16 +38,14 @@ var Quiz = (function() {
                 alternativaCorreta: 2
             },
             {
-                titulo: `
-(PUC-RIO 2009) Considere as informações apresentadas sobre as seguintes substâncias:
-<br><br>
-<br>I - ácido clorídrico: de fórmula HCl, age como ácido forte quando dissolvido em água.
-<br>II - nitrato de potássio: de fórmula KNO3, é um sal iônico que se dissocia totalmente em água.
-<br>III - argônio: de fórmula Ar, é um gás nobre, inerte.
-<br>IV - metano: de fórmula CH4, é um alcano, gasoso, cuja geometria molecular é a de um tetraedro regular.
-<br><br>
-A partir dessas informações, pode-se afirmar que:
-                `,
+                titulo: '(PUC-RIO 2009) Considere as informações apresentadas sobre as seguintes substâncias:'+
+                    '<br><br>'+
+                    '<br>I - ácido clorídrico: de fórmula HCl, age como ácido forte quando dissolvido em água.'+
+                    '<br>II - nitrato de potássio: de fórmula KNO3, é um sal iônico que se dissocia totalmente em água.'+
+                    '<br>III - argônio: de fórmula Ar, é um gás nobre, inerte.'+
+                    '<br>IV - metano: de fórmula CH4, é um alcano, gasoso, cuja geometria molecular é a de um tetraedro regular.'+
+                    '<br><br>'+
+                    'A partir dessas informações, pode-se afirmar que:',
                 alternativas: [
                     'Apenas o argônio é apolar.',
                     'Argônio e metano são muito pouco solúveis em água.',
@@ -60,11 +56,9 @@ A partir dessas informações, pode-se afirmar que:
                 alternativaCorreta: 1
             },
             {
-                titulo: `
-(UFPR 2010) As plantas sintetizam a estrutura de poliisopreno das borrachas naturais usando o pirofosfato de 3-metil-3-butenila. Muitos outros produtos naturais são derivados desse composto, incluindo os terpenos. O sesquiterpeno farnesol é uma das substâncias mais comuns do reino vegetal e é um precursor biossintético da estrutura de esteroides.
-<br><br><img src="img/questao-5.jpg" height="120"/><br><br>
-Sobre o composto orgânico farnesol, considere as seguintes afirmativas:
-                `,
+                titulo: '(UFPR 2010) As plantas sintetizam a estrutura de poliisopreno das borrachas naturais usando o pirofosfato de 3-metil-3-butenila. Muitos outros produtos naturais são derivados desse composto, incluindo os terpenos. O sesquiterpeno farnesol é uma das substâncias mais comuns do reino vegetal e é um precursor biossintético da estrutura de esteroides.'+
+                    '<br><br><img src="img/questao-5.jpg" height="120"/><br><br>'+
+                    'Sobre o composto orgânico farnesol, considere as seguintes afirmativas:',
                 alternativas: [
                     'A estrutura do farnesol apresenta seis átomos de carbono sp2.',
                     'O produto de oxidação do farnesol é uma cetona.',
@@ -194,10 +188,7 @@ Sobre o composto orgânico farnesol, considere as seguintes afirmativas:
         var $btn = $(e.target),
             questao_index = $btn.attr('id').split('_')[1],
             questao = questoes[questao_index];
-
-
-
-
+            // terminar
         $btn.hide();
     }
 
